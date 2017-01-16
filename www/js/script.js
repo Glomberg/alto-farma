@@ -7,7 +7,7 @@ $(document).ready(function(){
 	// to the top button fadeIn/fadeOut
 	$(window).scroll(function () {
 		if ($(document).scrollTop() > 39) {
-			$('.bottom-header').addClass('fixed');
+			$('header').addClass('fixed');
 		} else { 
 			$('.fixed').removeClass('fixed');
 		}
@@ -175,59 +175,8 @@ $(document).ready(function(){
     
     $(function(){
         var spinner = $( ".spinner" ).spinner();
-    });
+    });    
     
-    
-    /*$(function(){
-        $('.uncycle').slick({
-          infinite: false,
-          speed: 350,
-        // определяем скорость перелистывания
-          slidesToShow: 5,
-        //количество слайдов для показа
-          slidesToScroll: 1,
-        //сколько слайдов за раз перелистнется
-            responsive: [
-                {
-                  breakpoint: 1200,
-                  //сообщает, при какой ширине экрана нужно включать настройки
-                  settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    infinite: true,
-                  }
-                },
-                {
-                  breakpoint: 940,
-                  //сообщает, при какой ширине экрана нужно включать настройки
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                  }
-                },
-                {
-                  breakpoint: 766,
-                  //сообщает, при какой ширине экрана нужно включать настройки
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                  }
-                },
-                {
-                  breakpoint: 479,
-                  //сообщает, при какой ширине экрана нужно включать настройки
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                  }
-                }
-            ]
-            
-        });
-    });*/
     $(function() {
         $.mask.definitions['~'] = "[+-]";
         $("#date").mask("99/99/9999",{completed:function(){alert("completed!");}});
@@ -248,41 +197,26 @@ $(document).ready(function(){
         });
     });
 	
-    /*$(function() {
-				$('.slider1').carouFredSel({
-					synchronise: ['.slide', false, true],
-					auto: true,
-					width: 100 + "%",
-					items: {
-						visible: 3,
-						start: 0
-					},
-					scroll: {
-						onBefore: function( data ) {
-							data.items.old.eq(1).removeClass('selected');
-							data.items.visible.eq(1).addClass('selected');
-						}
-					},
-					prev: '#prev',
-					next: '#next'
-				});
-
-				$('#images').carouFredSel({
-					auto: false,
-					items: 1,
-					scroll: {
-						fx: 'fade'
-					}
-				});
-
-				$('#thumbs img').click(function() {
-					$('#thumbs').trigger( 'slideTo', [this, -1] );
-				});
-				$('#thumbs img:eq(1)').addClass('selected');
-    });*/
+    	
+	// Owl Carousels
+	$('.owlslider').owlCarousel({
+		loop: true,
+		nav: true,
+		dots: false,
+		items:1
+	});
 	
-	// Owl Carousel
-	$('.owlslider').owlCarousel();
+	$('.index-right .slider').owlCarousel({
+		items:1,
+		margin: 15
+	});
+	
+	$('.slick-slider').owlCarousel({
+		loop: true,
+		nav: true,
+		dots: false,
+		items:5,
+	});
 	
 	
 });

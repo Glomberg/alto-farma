@@ -43,9 +43,10 @@
     font-family: 'RobotoThin';
     font-style: normal;
     font-weight: 400;
-    src: local('Roboto Thin'), local('RobotoTh-Regular'),
-        url(fonts/RobotoThin/RobotoThin.woff) format('woff'),
-        url(fonts/RobotoThin/RobotoThin.ttf) format('truetype');
+    src: local('Roboto Thin'), 
+	local('RobotoTh-Regular'),
+    url("fonts/RobotoThin/RobotoThin.woff") format('woff'),
+    url("fonts/RobotoThin/RobotoThin.ttf") format('truetype');
 }
 /* font-family: "OpenSansSemiBold"; */
 @font-face {
@@ -654,6 +655,7 @@ catalog-right .catalog .main-menu{
 }
 .geen-bg-for-menu{
     position: relative;
+	height: 54px;
 }
 .geen-bg-for-menu:before{
     left: 0;
@@ -712,7 +714,7 @@ catalog-right .catalog .main-menu{
     display: none;
     position: absolute;
     left: 0;
-    top: 99%;
+    top: calc(100% - 2px);
     z-index: 9;
     box-sizing: border-box;
     padding: 26px 32px 32px 32px;
@@ -824,7 +826,7 @@ h1:after,
     background: #636363;
 }
 .shares{
-    padding: 21px 0 0 0;
+    /*padding: 21px 0 0 0;*/
 }
 .share{
     width: 33.33%;
@@ -933,7 +935,7 @@ h1:after,
 footer{
     border-top: 13px solid #181818;
     display: block;
-    margin: 55px 0 0 0;
+    /*margin: 55px 0 0 0;*/
 }
 .footer-left{
     width: 215px;
@@ -2647,16 +2649,14 @@ table tr td .price:after,
 .products{
 }
 .product{
-    width: 205px;
+    /*width: 205px;*/
     border: 1px solid #bebebe;
     box-sizing: border-box;
-    margin: 0 15px 15px 0;
-    float: left;
+    /*margin: 0 15px 15px 0;
+    float: left;*/
+	transition: border 0.3s ease-in-out;
 }
-.product:nth-child(4n){
-    float: right;
-    margin: 0 0 15px 0;
-}
+	
 .product-img{
     text-align: center;
     line-height: 190px;
@@ -2699,9 +2699,10 @@ table tr td .price:after,
     border-left: 2px solid #980505;
     border-bottom: 2px solid #980505;
 }
-.product-img img{
-    display: inline-block;
+.product .product-img img{
+    display: inline-block !important;
     vertical-align: middle;
+	width: auto !important;
 }
 .product-title{
     text-align: center;
@@ -2735,7 +2736,7 @@ table tr td .price:after,
 }
 .product:hover{
     border: 1px solid #5e5e5e;
-    box-shadow: 0 0 7px #595959;
+    /*box-shadow: 0 0 7px #595959;*/
 }
 .product-amount{
     background: #fff;
@@ -3202,6 +3203,7 @@ table tr td .price:after,
         -ms-touch-action: pan-y;
             touch-action: pan-y;
         -webkit-tap-highlight-color: transparent;
+		margin-bottom: 15px;
     }
 
     .slick-list
@@ -3338,7 +3340,7 @@ table tr td .price:after,
 .product-bottom-right a.add-to-cart:hover{
     background-position: 0 100%;
 }
-.slick-arrow{
+.slick-slider .owl-nav > div{
     display: block;
     position: absolute;
     text-indent: -99999px;
@@ -3352,14 +3354,14 @@ table tr td .price:after,
     z-index: 100;
     opacity: 0.8;
 }
-.slick-prev.slick-arrow{
+.slick-slider .owl-nav > div.owl-prev{
     left: -20px;
 }
-.slick-next.slick-arrow{
+.slick-slider .owl-nav > div.owl-next{
     background-position: -40px 0;
     right: -20px;
 }
-.slick-arrow:hover{
+.slick-slider .owl-nav > div:hover{
     opacity: 1;
 }
 .steps{
@@ -4135,6 +4137,7 @@ table tr td a.cart-p-title{
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.5);
+	z-index: 1;
 }
 .slide-new-img img{
     display: block;
@@ -4191,7 +4194,7 @@ a.slide-new-date{
     float: right;
 }
 .index-sliders{
-    margin: -25px auto 30px auto;
+    /*margin: -25px auto 30px auto;*/
 }
 
 /*
@@ -4206,7 +4209,7 @@ a.slide-new-date{
 	position: relative;
 	width: 100%;
 	height: auto;
-    padding: 0 0 30px 0;
+    /*padding: 0 0 30px 0;*/
 	overflow: hidden;
 }
 .slider1{
@@ -4222,36 +4225,6 @@ a.slide-new-date{
     display: block;
 }
 	
-	.slides {
-		height: 100%;
-		
-		/* Simple clear fix */
-		overflow: hidden;
-		
-		/**	
-		 * Prevent blinking issue
-		 * Not tested. Experimental.
-		 */
-		-webkit-backface-visibility: hidden;
-		-webkit-transform-style: preserve-3d;
-
-		/**
-		 * Here is CSS transitions 
-		 * responsible for slider animation in modern broswers
-		 */
-		-webkit-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
-		   -moz-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
-		    -ms-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
-		     -o-transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000); 
-		        transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
-	}
-	
-		.slide {
-			height: 100%;
-			float: left;
-			clear: none;
-		}
-
 
 	.slider-arrows {
         display: none;
@@ -4349,25 +4322,26 @@ a.slide-new-date{
     margin: 0 0 0 0;
 }
 .index-right{
-    /*background: url(../images/lapka1.png) top left no-repeat #d9d9d9;*/
-    padding: 10px 0 0 10px;
+    padding:  15px 0 0 0;
     position: relative;
     z-index: 1;
-    /*margin: 0;*/
-    height: 549px;
+    /*margin: 0;
+    height: 549px;*/
     box-sizing: border-box;
 }
 .sliders-on-main-page{
     height: 550px;
-    margin: -65px 0 30px;
 	background: #D9D9D9;
+	/*top: -65px;
+	margin-bottom: -35px;*/
+	margin-bottom: 15px;
 }
 .search-header-bottom select option{
     font-size: 16px;
     display: block;
     font-family: "RobotoMedium";
 }
-.ui-datepicke{
+.ui-datepicker{
     font-family: Arial;
 }
 .ui-datepicker{
@@ -4588,7 +4562,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     width: 75%;
 }
 /* Фиксация хедера при проерутки */
-    .bottom-header.fixed{
+    header.fixed .bottom-header{
         width: 1140px;
         position: fixed;
         background: #fff;
@@ -4596,48 +4570,59 @@ table.ui-datepicker-calendar tbody tr:last-child td{
         right: 50%;
         margin: 0 -570px 0 0;
         padding: 5px 0 5px 10px;
-        box-shadow: 0 3px 17px #7e7e7e;
+        /*box-shadow: 0 3px 17px #7e7e7e;*/
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         z-index: 105;
         height: 55px;
         box-sizing: border-box;
     }
-    .bottom-header.fixed .logo a:after{
+	header.fixed .container:before {
+		content: '';
+		height: 55px;
+		width: 100%;
+		left: 0;
+		top: 0;
+		position: fixed;
+		box-shadow: 0 3px 17px #7e7e7e;
+		z-index: 104;
+		background: #FFFFFF;
+	}
+    header.fixed .bottom-header .logo a:after{
         display: none;
     }
-    .bottom-header.fixed .search-header-top{
+    header.fixed .bottom-header .search-header-top{
         display: none;
     }
-    .bottom-header.fixed .cart-top{
+    header.fixed .bottom-header .cart-top{
         display: none;
     }
-    .bottom-header.fixed .cart-left,
-    .bottom-header.fixed .cart-left a{
+    header.fixed .bottom-header .cart-left,
+    header.fixed .bottom-header .cart-left a{
         width: 45px;
         height: 45px;
     }
-    .bottom-header.fixed .cart-left a{
+    header.fixed .bottom-header .cart-left a{
         background-size: 100% 200%;
     }
-    .bottom-header.fixed .cart-right{
+    header.fixed .bottom-header .cart-right{
         margin: 10px 0 0 0;
     }
-    .bottom-header.fixed .logo{
+    header.fixed .bottom-header .logo{
         padding: 0;
     }
-    .bottom-header.fixed .logo a img{
+    header.fixed .bottom-header .logo a img{
         height: 45px;
     }
-    .bottom-header.fixed .cart{
+    header.fixed .bottom-header .cart{
         margin: 0 0 0 0;
         padding: 0 0 5px 0;
     }
-    .bottom-header.fixed .search-header-bottom{
+    header.fixed .bottom-header .search-header-bottom{
         margin: 4px 0 0 0;
         padding: 0;
     }
-    .bottom-header.fixed .cart-products{
+    header.fixed .bottom-header .cart-products{
         right: 0;
     }
 /* Фиксация хедера при проерутки */
@@ -6450,4 +6435,71 @@ table.ui-datepicker-calendar tbody tr:last-child td{
 .owlslider {
 	height: 550px;
 	width: 100%;
+	overflow: hidden;
+	position: relative;
 }
+	.owlslider.owl-carousel .owl-item {
+		min-height: 550px;
+	}
+	.owlslider .item {
+		height: 550px;
+		background-color: #D9D9D9;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+	.owlslider .item img{
+		opacity: 0;
+	}
+	.owl-next, .owl-prev {
+		position: absolute;
+		top: 50%;
+		background: url(../images/icons/slide1-arrows.png) no-repeat right center;
+		width: 13px;
+		height: 14px;
+		font-size: 0;
+		opacity: 0.5;
+		transition: opacity 0.3s ease-in-out;
+	}
+	.owlslider:hover .owl-next, .owlslider:hover .owl-prev {
+		opacity: 1;
+	}
+	.owl-next {
+		right: 25px;
+	}
+	.owl-prev {
+		left: calc(100% - 840px + 25px);
+		background-position: left center;
+	}
+	
+.owl-dots {
+	text-align: center;
+	padding-top: 5px;
+}
+	.owl-dot {
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		border: 2px solid #FFFFFF;
+		border-color: #D9D9D9;
+		background: #D9D9D9;
+		position: relative;
+		display: inline-block;
+		margin-right: 5px;
+	}
+		.owl-dot:last-child {
+			margin-right: 0;
+		}
+		.owl-dot:after {
+			content: '';
+			position: absolute;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: #FFFFFF;
+			top: calc(50% - 3.5px);
+			left: calc(50% - 3.5px);
+		}
+		.owl-dot.active, .owl-dot:hover {
+			border-color: #FFFFFF;
+		}
