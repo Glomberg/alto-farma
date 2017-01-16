@@ -13,19 +13,10 @@ $(document).ready(function(){
 		}
 	});
     
-    $(function(){
-        $("#datepicker-button").datepicker();
-    });
-    
-    $(function(){
-        $(".tabs").tabs();
-    });
-    $(function(){
-        $("input.checkboxradio").checkboxradio();
-    });
-    $(function(){
-        $(".selectmenu").selectmenu();
-    });
+    $(".datepicker-button").datepicker();
+    $(".tabs").tabs();
+    $("input.checkboxradio").checkboxradio();
+    $(".selectmenu").selectmenu();
         
     /* POPUP */
         $('.popup1 .close_window1, .overlay1').click(function (){
@@ -173,29 +164,26 @@ $(document).ready(function(){
     });
     
     
-    $(function(){
-        var spinner = $( ".spinner" ).spinner();
-    });    
+    var spinner = $( ".spinner" ).spinner();
     
-    $(function() {
-        $.mask.definitions['~'] = "[+-]";
-        $("#date").mask("99/99/9999",{completed:function(){alert("completed!");}});
-        $("#phone").mask("(999) 999-9999");
-        $("#phoneExt").mask("(999) 999-9999? x99999");
-        $("#iphone").mask("+33 999 999 999");
-        $("#tin").mask("99-9999999");
-        $(".ssn").mask("+7 999-99-9999");
-        $("#product").mask("a*-999-a999", { placeholder: " " });
-        $("#eyescript").mask("~9.99 ~9.99 999");
-        $("#po").mask("PO: aaa-999-***");
-		$("#pct").mask("99%");
+	// Masked Input
+    $.mask.definitions['~'] = "[+-]";
+	$("input.date").mask("99/99/9999",{completed:function(){alert("completed!");}});
+	$("input.phone").mask("+7 (999) 999-9999");
+	$("input.phoneExt").mask("(999) 999-9999? x99999");
+	$("input.iphone").mask("+33 999 999 999");
+	$("input.tin").mask("99-9999999");
+	$("input.ssn").mask("+7 999-99-9999");
+	$("input.product").mask("a*-999-a999", { placeholder: " " });
+	$("input.eyescript").mask("~9.99 ~9.99 999");
+	$("input.po").mask("PO: aaa-999-***");
+	$("input.pct").mask("99%");
 
-        $("input").blur(function() {
-            $("#info").html("Unmasked value: " + $(this).mask());
-        }).dblclick(function() {
-            $(this).unmask();
-        });
-    });
+	/*$("input").blur(function() {
+		$("#info").html("Unmasked value: " + $(this).mask());
+	}).dblclick(function() {
+		$(this).unmask();
+	});*/
 	
     	
 	// Owl Carousels
@@ -215,7 +203,56 @@ $(document).ready(function(){
 		loop: true,
 		nav: true,
 		dots: false,
-		items:5,
+		responsive:{
+			0:{
+				items:1
+			},
+			475: {
+				items:2
+			},
+			670:{
+				items:3
+			},
+			910:{
+				items:4
+			},
+			1160:{
+				items:5
+			}
+		}
+	});
+	
+	// Animal's card editing
+	var animal_editing = false;
+	$('.update-animal').on('click', function(e){
+		e.preventDefault();
+		var show_a = $(this).parent().parent().parent('.show-animal');
+		var edit_a = $(this).parent().parent().parent('.show-animal').siblings('.edit-animal');
+		if (!animal_editing) {
+			animal_editing = true;
+			show_a.slideUp(400);
+			setTimeout(function(){
+				edit_a.slideDown(400);
+			}, 400);
+			setTimeout(function(){
+				animal_editing = false;
+			}, 800);
+		}
+	});
+	$('.save a').on('click', function(e){
+		e.preventDefault();
+		var show_a = $(this).parent().parent('.edit-animal').siblings('.show-animal');
+		var edit_a = $(this).parent().parent('.edit-animal');
+		if (!animal_editing) {
+			animal_editing = true;
+			edit_a.slideUp(400);
+			setTimeout(function(){
+				show_a.slideDown(400);
+			}, 400);
+			setTimeout(function(){
+				animal_editing = false;
+			}, 800);
+		}
 	});
 	
 	

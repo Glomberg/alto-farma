@@ -1,53 +1,5 @@
-/* font-family: "RobotoRegular"; */
-@font-face {
-    font-family: "RobotoRegular";
-    src: url("fonts/RobotoRegular/RobotoRegular.eot");
-    src: url("fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
-    url("fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-    url("fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoLight"; */
-@font-face {
-    font-family: "RobotoLight";
-    src: url("fonts/RobotoLight/RobotoLight.eot");
-    src: url("fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
-    url("fonts/RobotoLight/RobotoLight.woff") format("woff"),
-    url("fonts/RobotoLight/RobotoLight.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoMedium"; */
-@font-face {
-    font-family: "RobotoMedium";
-    src: url("fonts/RobotoMedium/RobotoMedium.eot");
-    src: url("fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
-    url("fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
-    url("fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoBold"; */
-@font-face {
-    font-family: "RobotoBold";
-    src: url("fonts/RobotoBold/RobotoBold.eot");
-    src: url("fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
-    url("fonts/RobotoBold/RobotoBold.woff") format("woff"),
-    url("fonts/RobotoBold/RobotoBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoThin"; */
-@font-face {
-    font-family: 'RobotoThin';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto Thin'), 
-	local('RobotoTh-Regular'),
-    url("fonts/RobotoThin/RobotoThin.woff") format('woff'),
-    url("fonts/RobotoThin/RobotoThin.ttf") format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&subset=cyrillic');
+
 /* font-family: "OpenSansSemiBold"; */
 @font-face {
     font-family: "OpenSansSemiBold";
@@ -80,7 +32,8 @@
 }
 body{
     margin: 0;
-    font-family: "RobotoRegular", Arial;
+    font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 }
 *:focus{
     outline: 0;
@@ -166,7 +119,7 @@ header .container{
     font-size: 16px;
     color: #fff;
     text-decoration: none;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     padding: 7px 0 10px 0;
     letter-spacing: 0.1px;
 }
@@ -183,7 +136,7 @@ header .container{
     color: #fff;
     color: #fff;
     text-decoration: none;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     background: #f1592a;
     padding: 6px 0 9px 0;
     height: 39px;
@@ -216,7 +169,7 @@ header .container{
     text-align: right;
     padding: 0 16px 0 0;
     font-size: 14px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     color: #000;
     margin: -3px 0 0 0;
 }
@@ -230,7 +183,7 @@ header .container{
 .city{
     font-size: 13px;
     color: #6f6f6f;
-    font-family: 'RobotoThin';
+    font-family: 'Roboto';font-weight: 100;
     float: left;
     margin: 13px 22px 0 0;
     position: relative;
@@ -239,7 +192,7 @@ header .container{
     display: inline-block;
     color: #fff;
     background: #f1592a;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     padding: 2px 26px 3px 26px;
     border-radius: 11.5px;
     margin: 0 0 0 8px;
@@ -266,7 +219,7 @@ header .container{
     box-sizing: border-box;
     padding: 5.5px 0;
     border: 0;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     font-size: 14px;
     color: #cbcbcb;
     border-bottom: 1px solid #f1592a;
@@ -279,7 +232,7 @@ header .container{
     line-height: normal;
     color: #000;
     text-decoration: none;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     padding: 2.5px 18px;
     border-radius: 12px;
     margin: 2px 10px 2px -18px;
@@ -294,7 +247,7 @@ header .container{
 .our-shops a{
     color: #000;
     text-decoration: none;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     font-size: 15px;
 }
 .our-shops a img{
@@ -325,7 +278,7 @@ header .container{
 .search-header-bottom input{
     font-size: 16px;
     color: #646363;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     border: 0;
     box-sizing: border-box;
     width: 355px;
@@ -338,7 +291,7 @@ header .container{
     width: 137px;
     font-size: 12px;
     color: #1b1b1b;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     border: 0;
     height: 36px;
     border-left: 1px solid #cdcdcd;
@@ -431,11 +384,11 @@ header .container{
 }
 .cart-top{
     font-size: 16px;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     margin: 10px 0 0 2px;
 }
 .cart-top span{
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .cart-sum{
     color: #f1592a;
@@ -444,7 +397,7 @@ header .container{
 }
 .cart-sum span{
     font-size: 24px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .cart-product{
     overflow: hidden;
@@ -457,7 +410,7 @@ header .container{
     height: 24px;
     text-align: center;
     position: relative;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     margin: 0 auto;
 }
 .ui-spinner-button{
@@ -490,14 +443,14 @@ header .container{
     border-bottom: 1px solid #d5d5d5;
     font-size: 16px;
     color: #000;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .ui-spinner-button{
     position: absolute;
     display: block;
     font-size: 15.68px;
     color: #90c846;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .cart-product:before{
     content: "";
@@ -563,7 +516,7 @@ header .container{
 .bottom-block-of-cart-right span{
     font-size: 15px;
     color: #fff;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .delete-cart-product:hover{
     background-position: 0 100%;
@@ -588,7 +541,7 @@ header .container{
 .cart-product-title a{
     font-size: 12px;
     line-height: 12px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     text-decoration: none;
     color: #232228;
     display: block;
@@ -675,7 +628,7 @@ catalog-right .catalog .main-menu{
     vertical-align: middle;
     text-align: center;
     color: #fff;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -744,7 +697,7 @@ catalog-right .catalog .main-menu{
     display: inline-block;
     position: relative;
     font-size: 18px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     text-transform: inherit;
     margin: 0 0 37px 0;
 }
@@ -766,7 +719,7 @@ catalog-right .catalog .main-menu{
 }
 .main-menu li .menu-hover ul li ul li a{
     font-size: 15px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     border-bottom: 1px solid #848484;
     margin: 0;
 }
@@ -782,7 +735,7 @@ catalog-right .catalog .main-menu{
 }
 .breadcrumbs a{
     font-size: 16px;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     color: #232228;
     display: inline-block;
 }
@@ -810,7 +763,8 @@ h1,
     margin: 0 0 15px 0;
     padding: 0 0 5px 0;
     font-size: 30px;
-    font-family: 'RobotoThin', 'RobotoRegular';
+    font-family: 'Roboto';
+	font-weight: 100;
     position: relative;
     letter-spacing: 0.35px;
     font-weight: 100;
@@ -850,7 +804,7 @@ h1:after,
     font-size: 36px;
     color: #fff;
     text-decoration: none;
-    font-family: 'RobotoThin';
+    font-family: 'Roboto';font-weight: 100;
     vertical-align: middle;
 }
 .share-title a:hover{
@@ -876,7 +830,7 @@ h1:after,
     color: #fff;
     background: #f1592a;
     padding: 8px 9px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
 }
 .navigation{
     text-align: center;
@@ -920,7 +874,7 @@ h1:after,
     text-align: center;
     color: #242424;
     font-size: 17px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     transition: all 0.55s cubic-bezier(0.33, 0.59, 0.14, 1);
 }
 .navigation ul li a:hover{
@@ -945,14 +899,14 @@ footer{
 .footer-logo{
     text-decoration: none;
     color: #4e4e4e;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
 }
 .footer-logo-top{
     font-size: 22.19px;
     line-height: 22px;
 }
 .footer-logo-top span{
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
 }
 .footer-logo-bottom{
     font-size: 14.8px;
@@ -995,7 +949,7 @@ footer{
     padding: 7px 0 0 0;
 }
 .write-us-text a{
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     font-size: 18px;
     line-height: 17.4px;
     text-transform: uppercase;
@@ -1004,7 +958,7 @@ footer{
 }
 .copyright{
     font-size: 11px;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     letter-spacing: 0.1px;
 }
 .footer-menu{
@@ -1016,7 +970,7 @@ footer{
     font-size: 22px;
     text-transform: uppercase;
     color: #fff;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     padding: 0 0 1px 3.5px;
     letter-spacing: 0.5px;
 }
@@ -1029,7 +983,7 @@ footer{
     display: block;
     font-size: 14px;
     line-height: 20px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     color: #fff;
     padding: 0 0 1px 19px;
     position: relative;
@@ -1104,7 +1058,7 @@ footer{
     font-size: 22px;
     color: #4a4a4a;
     text-transform: uppercase;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     padding: 13px 0 5px 0;
 }
 .our-contacts{
@@ -1114,7 +1068,7 @@ footer{
     font-size: 22px;
     text-transform: uppercase;
     color: #4a4a4a;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     padding: 13px 0 0 0;
     letter-spacing: -0.5px;
 }
@@ -1127,7 +1081,7 @@ footer{
     color: #4a4a4a;
     text-decoration: none;
     display: block;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     line-height: 1;
 }
 .footer-contact-phone a.f-c-mail{
@@ -1413,12 +1367,12 @@ a.downald{
     margin: 0;
     line-height: 46px;
     font-size: 14px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     text-transform: uppercase;
 }
 .personal-information-date-right p.name{
     font-size: 26px;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
 }
 .personal-information-date-right .update{
     position: absolute;
@@ -1460,7 +1414,7 @@ a.downald{
     text-transform: uppercase;
     color: #fff;
     opacity: 0.7;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
 }
 .animal-img{
     background: #f68c6b;
@@ -1492,7 +1446,7 @@ a.downald{
     float: left;
     font-size: 11px;
     color: #ffcdbe;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     padding: 0 0 0 25px;
     position: relative;
     box-sizing: border-box;
@@ -1524,7 +1478,7 @@ a.downald{
     width: 100%;
     box-sizing: border-box;
     border: 0;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     font-size: 14px;
     color: #818181;
     padding: 4px 25px 4px 12px;
@@ -1536,7 +1490,7 @@ a.downald{
     box-sizing: border-box;
     font-size: 14px;
     color: #818181;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     padding: 4px 12px;
     border: 0;
     margin: 0 0 4px 0;
@@ -1568,7 +1522,7 @@ a.downald{
     vertical-align: middle;
     color: #fff;
     font-size: 12px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
 }
 .animal .date-of-berth{
     position: relative;
@@ -1584,6 +1538,14 @@ a.downald{
     margin: -10px 0 0 0;
     background: url(../images/icons/date-of-berth.png) no-repeat;
 }
+
+.show-animal {
+	display: block;
+}
+.edit-animal {
+	display: none;
+}
+
 .popup-title{
     font-family: "OpenSansSemiBold";
     font-size: 18px;
@@ -1621,7 +1583,7 @@ a.downald{
     font-size: 16px;
     color: #fff;
     background: #f42020;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     padding: 19.5px 0;
 }
 .popup input.error{
@@ -1732,7 +1694,7 @@ a.update-data:hover{
 .news-data span{
     font-size: 20px;
     color: #fff;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     display: block;
 }
 .main-news-description{
@@ -1743,7 +1705,7 @@ a.update-data:hover{
     display: inline-block;
     font-size: 24px;
     background: #90c846;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     color: #fff;
     padding: 7px 16px;
 }
@@ -1798,7 +1760,7 @@ a.update-data:hover{
     padding: 15px 10px;
     font-size: 18px;
     line-height: 20px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     background: #90c846;
 }
 .news-block-title a{
@@ -1831,7 +1793,7 @@ a.update-data:hover{
 }
 .news-block-date span{
     font-size: 20px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     display: block;
 }
 .news-article-title span{
@@ -1840,7 +1802,7 @@ a.update-data:hover{
     color: #fff;
     background: #90c846;
     padding: 7px 17px;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
 }
 .news-article-content p{
     font-size: 16px;
@@ -1867,7 +1829,7 @@ table tr td a{
     color: #f1592a;
     font-size: 18px;
     line-height: 24px;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     text-decoration: none;
 }
 .news-article-content a:hover,
@@ -1884,11 +1846,11 @@ table tr td a.repeat:visited{
 }
 table tr td a{
     font-size: 13px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
 }
 .ul-title{
     font-size: 24px;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
 }
 .news-article-content ul{
     -webkit-padding-start: 45px;
@@ -1948,7 +1910,7 @@ ol{
     box-sizing: border-box;
     background: #f5f5f5;
     border: 1px solid #b0b0b0;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     font-size: 16px;
     padding: 13px 22px;
     color: #4c4c4c;
@@ -2014,7 +1976,7 @@ table{
 table tr{
 }
 table tr th{
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     font-size: 16px;
     line-height: 17px;
     color: #fff;
@@ -2023,7 +1985,7 @@ table tr th{
     padding: 10.5px 0;
 }
 table tr td{
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     font-size: 13px;
     color: #161616;
     border-top: 1px solid #c6c6c6;
@@ -2099,7 +2061,7 @@ table tr td.orange.white{
 }
 .table-button{
     display: block;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     text-transform: uppercase;
     font-size: 12px;
     text-align: right;
@@ -2142,7 +2104,7 @@ table tr td .price,
     padding: 5.5px 0;
 }
 .cart-product-right-bottom .price{
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 table tr td .price:after,
 .product-price span:after,
@@ -2201,7 +2163,7 @@ table tr td .price:after,
 .name-of-catalog span,
 .name-of-catalog a{
     display: inline-block;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     font-size: 14px;
     color: #fff;
     border: 1px solid #f9bdaa;
@@ -2211,7 +2173,7 @@ table tr td .price:after,
 }
 .title-of-catalog{
     font-size: 36px;
-    font-family: 'RobotoThin';
+    font-family: 'Roboto';font-weight: 100;
     color: #fff;
     padding: 5px 0 20px 0;
 }
@@ -2231,7 +2193,8 @@ table tr td .price:after,
 }
 .catalog-menu ul li a{
     display: block;
-    font-family: 'RobotoBold';
+    font-family: 'Roboto';
+	font-weight: 700;
     font-size: 17px;
     position: relative;
     text-decoration: none;
@@ -2277,7 +2240,7 @@ table tr td .price:after,
 .catalog-menu ul li ul li a{
     margin: 0;
     padding: 7.5px 25px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     color: #2c2c2c;
     text-align: left;
     text-decoration: underline;
@@ -2316,7 +2279,7 @@ table tr td .price:after,
 .filter-block-title span{
     display: inline-block;
     vertical-align: middle;
-    font-family: 'RobotoThin';
+    font-family: 'Roboto';font-weight: 100;
     font-size: 30px;
     color: #fff;
 }
@@ -2350,7 +2313,7 @@ table tr td .price:after,
 }
 .ui-checkboxradio-label{
     font-size: 16px;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     position: relative;
     display: block;
 }
@@ -2372,7 +2335,7 @@ table tr td .price:after,
     background-position: 0 100%;
 }
 .ui-checkboxradio-label.ui-state-active{
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     box-sizing: border-box;
 }
 
@@ -2441,7 +2404,7 @@ table tr td .price:after,
     width: 88px;
     box-sizing: border-box;
     border: 2px solid #b0b0b0;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     font-size: 18px;
     color: #5e5e5e;
     padding: 7px 12px;
@@ -2513,11 +2476,11 @@ table tr td .price:after,
     text-transform: uppercase;
     font-size: 13px;
     color: #3f3f3f;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     float: left;
 }
 .price-from-to input{
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     font-size: 16px;
     color: #373737;
     font-weight: 100;
@@ -2606,7 +2569,7 @@ table tr td .price:after,
 }
 .product-at-the-page .product-at-the-page-text{
     font-size: 13px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     text-transform: uppercase;
     float: left;
     margin: 2px 12px 0 0;
@@ -2624,7 +2587,7 @@ table tr td .price:after,
     text-align: center;
     font-size: 14px;
     color: #fff;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     padding: 6.5px 0;
 }
 .product-at-the-page .ui-selectmenu-button .ui-selectmenu-icon{
@@ -2637,7 +2600,7 @@ table tr td .price:after,
 .ui-selectmenu-menu ul#product-at-the-page-menu li div{
     border: 0;
     padding: 9px 0;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     font-size: 14px;
     color: #fff;
     background: #f17d5a;
@@ -2674,7 +2637,7 @@ table tr td .price:after,
     display: inline-block;
     font-size: 13px;
     background: #f12a2a;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     color: #fff;
     padding: 4.5px 10px;
     border-bottom-left-radius: 12px;
@@ -2707,7 +2670,7 @@ table tr td .price:after,
 .product-title{
     text-align: center;
     text-transform: uppercase;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     padding: 0 0 5px 0;
     height: 54px;
     line-height: 54px;
@@ -2771,7 +2734,7 @@ table tr td .price:after,
     width: 60px;
     font-size: 14px;
     color: #000;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     text-align: center;
     padding: 12px 0;
 }
@@ -2791,7 +2754,7 @@ table tr td .price:after,
     display: inline-block;
     font-size: 18px;
     color: #f1592a;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .blue-point{
     display: inline-block;
@@ -2837,7 +2800,7 @@ table tr td .price:after,
     color: #fff;
     text-decoration: none;
     font-size: 12px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     text-transform: uppercase;
 }
 .product-bottom-left a:hover,
@@ -2939,7 +2902,7 @@ table tr td .price:after,
     padding: 15px 0 15px 0;
     font-size: 12px;
     text-transform: uppercase;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     color: #000;
 }
 .our-shops-popup-content table tr th:first-child{
@@ -2950,7 +2913,7 @@ table tr td .price:after,
     border: 0;
     border-bottom: 1px solid #c1c1c1;
     font-size: 14px;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
 }
 .our-shops-popup-content table tr:last-child td{
     border: 0;
@@ -2977,7 +2940,7 @@ table tr td .price:after,
     vertical-align: middle;
 }
 .our-shops-popup-content table tr td .bold{
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .orange-text{
     color: #f1592a;
@@ -2992,7 +2955,7 @@ table tr td .price:after,
 .to-cart-product-img a{
     display: inline-block;
     vertical-align: middle;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     color: #000;
@@ -3010,7 +2973,7 @@ table tr td .price:after,
     font-size: 18px;
     color: #f1592a;
     float: left;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     margin: 40px 0 0 0;
 }
 .to-cart-product-add-to-cart{
@@ -3022,7 +2985,7 @@ table tr td .price:after,
     border: 1px solid #c1c1c1;
     font-size: 12px;
     color: #000;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     padding: 14px 28px;
@@ -3068,7 +3031,7 @@ table tr td .price:after,
 }
 .shop-block-title{
     font-size: 24px;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     padding: 0 0 5px 0;
 }
 .shop-block-description p{
@@ -3079,7 +3042,7 @@ table tr td .price:after,
 }
 .shop-block-description p span{
     display: inline-block;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .shop-block{
     margin: 0 0 12px 0;
@@ -3107,7 +3070,7 @@ table tr td .price:after,
 }
 .stock-title span{
     display: inline-block;
-    font-family: 'RobotoThin';
+    font-family: 'Roboto';font-weight: 100;
     font-size: 48px;
     background: #f1592a;
     padding: 1px 20px;
@@ -3122,7 +3085,7 @@ table tr td .price:after,
 }
 .stock-date span{
     display: inline-block;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     font-size: 20.8px;
     color: #fff;
     background: #f1592a;
@@ -3375,7 +3338,7 @@ table tr td .price:after,
     text-transform: uppercase;
     color: #fff;
     background: #c5c5c5;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     font-size: 16px;
     padding: 10px 20px;
     min-width: 95px;
@@ -3392,7 +3355,7 @@ table tr td .price:after,
 }
 .delivery-title{
     font-size: 22px;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     margin: 0 0 15px 0;
 }
 .delivery{
@@ -3415,7 +3378,7 @@ table tr td .price:after,
 .delivery-top-right a{
     color: #fff;
     font-size: 12px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -3445,7 +3408,7 @@ table tr td .price:after,
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .delivery.active{
     background: #90c846;
@@ -3498,7 +3461,7 @@ table tr td .price:after,
     box-sizing: border-box;
     color: #4c4c4c;
     font-size: 16px;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     background: #f5f5f5;
 }
 .delivery-form input::-webkit-input-placeholder,
@@ -3550,7 +3513,7 @@ table tr td .price:after,
 }
 .delivery-whithout-pay{
     color: #fff;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     font-size: 18px;
     text-align: right;
     padding: 10px 0 0 0;
@@ -3559,7 +3522,7 @@ table tr td .price:after,
 .delivery-process-title{
     font-size: 22px;
     color: #060606;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
 }
 .delivery-process .ui-checkboxradio-label.ui-checkboxradio-radio-label{
     text-transform: uppercase;
@@ -3591,7 +3554,7 @@ table tr td .price:after,
 .delivery-process-table table tr td{
     border-top: 1px solid #b5b5b5;
     border-left: 1px solid #b5b5b5;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     font-size: 16px;
 }
 .delivery-process-table table tr td:first-child{
@@ -3604,7 +3567,7 @@ table tr td .price:after,
     font-size: 24px;
     color: #fff;
     text-transform: uppercase;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     background: #f1592a;
     text-decoration: none;
     padding: 11px 60px;
@@ -3624,7 +3587,7 @@ table tr td .price:after,
     border-right: 0;
 }
 .cart-table table tr td .price{
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .cart-table .ui-spinner{
     width: 95px;
@@ -3656,7 +3619,7 @@ table tr td .price:after,
     margin: 0 0 15px 0;
 }
 .cart-selectmenu-price .ui-selectmenu-button .ui-selectmenu-text{
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     font-size: 20px;
     color: #f1592a;
 }
@@ -3709,12 +3672,12 @@ table tr td a.cart-p-title{
     background: #90c846;
     color: #fff;
     font-size: 26px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     padding: 10.5px 0;
 }
 .total-sum-text{
     font-size: 18px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     padding: 0 20px 0 0;
 }
 .total-sum-content.tota-sum-dis{
@@ -3733,7 +3696,7 @@ table tr td a.cart-p-title{
 .free-shipping-title{
     font-size: 33.94px;
     color: #f1592a;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     padding: 60px 0 10px 0;
 }
 .free-shipping-title span{
@@ -3745,7 +3708,7 @@ table tr td a.cart-p-title{
 }
 .free-shipping-pod-title span{
     font-size: 28.86px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .free-shipping-button{
     padding: 40px 0 45px 0;
@@ -3756,7 +3719,7 @@ table tr td a.cart-p-title{
     color: #f1592a;
     text-transform: uppercase;
     font-size: 18px;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     padding: 8px 17px;
     border: 2px solid #f1592a;
     border-radius: 7px;
@@ -3780,7 +3743,7 @@ table tr td a.cart-p-title{
     font-size: 16px;
     text-transform: uppercase;
     color: #fff;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     -webkit-transform: rotate(-90deg); /* Chrome y Safari */
     -moz-transform: rotate(-90deg); /* Firefox */
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
@@ -3812,7 +3775,7 @@ table tr td a.cart-p-title{
     text-transform: uppercase;
     color: #f1592a;
     border: 0;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     border-bottom: 2px solid #f6a391;
     padding: 0;
     margin: 4px 0 0 0;
@@ -3960,7 +3923,7 @@ table tr td a.cart-p-title{
 .product-in-title{
     font-size: 22px;
     line-height: 30px;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     margin: -5px 0 0 0;
 }
 .characteristics{
@@ -3984,7 +3947,7 @@ table tr td a.cart-p-title{
 .characteristics-tr{
     color: #404040;
     font-size: 14px;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     background: #fff;
     padding: 6.5px 10px;
     box-sizing: border-box;
@@ -4026,7 +3989,7 @@ table tr td a.cart-p-title{
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     padding: 5px 0 25px 0;
     border: 1px solid #b2d97e;
     border-radius: 15px;
@@ -4059,7 +4022,7 @@ table tr td a.cart-p-title{
     text-align: center;
     font-size: 18px;
     color: #000;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     margin: 0 0 10px 0;
 }
 .characteristics-green-left-top-block.right{
@@ -4077,7 +4040,8 @@ table tr td a.cart-p-title{
 .characteristics-price-old{
     font-size: 15px;
     color: #818181;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';
+	font-weight: 700;
     text-align: center;
     text-decoration: line-through;
 }
@@ -4088,7 +4052,8 @@ table tr td a.cart-p-title{
     font-size: 24px;
     color: #f1592a;
     text-align: center;
-    font-family: "RobotoBold"
+    font-family: 'Roboto';
+	font-weight: 700;
 }
 .characteristics-price-new:after{
     width: 14px;
@@ -4113,7 +4078,7 @@ table tr td a.cart-p-title{
 .product-discription{
     font-size: 16px;
     color: #131313;
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
 }
 .product-discription{
     margin: 35px 0 60px 0;
@@ -4165,7 +4130,7 @@ a.slide-new-date{
     display: none;
 }
 .slide-new-date span{
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
     display: block;
     padding: 10px 0 0 0;
 }
@@ -4178,7 +4143,7 @@ a.slide-new-date{
     font-size: 16px;
     line-height: 16px;
     color: #010101;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     text-decoration: none;
     margin: 5px 0 5px 0;
 }
@@ -4339,7 +4304,7 @@ a.slide-new-date{
 .search-header-bottom select option{
     font-size: 16px;
     display: block;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
 }
 .ui-datepicker{
     font-family: Arial;
@@ -4358,7 +4323,7 @@ a.slide-new-date{
 }
 .ui-datepicker-month{
     font-size: 18px;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     display: inline-block;
     vertical-align: middle;
 }
@@ -4395,7 +4360,7 @@ a.slide-new-date{
     opacity: 1;
 }
 table thead tr th{
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
     font-size: 14px;
     line-height: normal;
     text-transform: uppercase;
@@ -4419,7 +4384,7 @@ table.ui-datepicker-calendar tr td a{
     display: inline-block;
     padding: 5.5px 0;
     border-radius: 50%;
-    font-family: "RobotoRegular";
+    font-family: 'Roboto';font-weight: 400;
 }
 table.ui-datepicker-calendar tr td.ui-datepicker-current-day a,
 table.ui-datepicker-calendar tr td a:hover{
@@ -4444,7 +4409,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     text-align: left;
 }
 .waiting-list table tr td a.wait-title{
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     font-size: 14px;
     color: #161616;
     line-height: normal;
@@ -4482,7 +4447,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
 }
 .product-is-absent-content span{
     color: #f1592a;
-    font-family: "RobotoBold";
+    font-family: 'Roboto';font-weight: 700;
 }
 .popup.product-is-absent .close_window{
     display: block;
@@ -4570,7 +4535,6 @@ table.ui-datepicker-calendar tbody tr:last-child td{
         right: 50%;
         margin: 0 -570px 0 0;
         padding: 5px 0 5px 10px;
-        /*box-shadow: 0 3px 17px #7e7e7e;*/
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         z-index: 105;
@@ -4639,7 +4603,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     border-radius: 50%;
 }
 .ui-selectmenu-menu ul#kind-of-animal-menu li div{
-    font-family: "RobotoLight";
+    font-family: 'Roboto';font-weight: 300;
     font-size: 12px;
     padding: 6px 0 6px 7px;
 }
@@ -4653,7 +4617,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
 }
 .delivery-table .delivery-table-block{
     display: table-cell;
-    font-family: "RobotoMedium";
+    font-family: 'Roboto';font-weight: 500;
     font-size: 16px;
 }
 .delivery-table .delivery-table-block>div{
@@ -4671,7 +4635,10 @@ table.ui-datepicker-calendar tbody tr:last-child td{
 }
 @media screen and (max-width: 1223px){
     /* Фиксация хедера при проерутки */
-        .bottom-header.fixed{
+		header.fixed .container::before {
+			display: none;
+		}
+        header.fixed .bottom-header{
             width: auto;
             position: relative;
             background: #fff;
@@ -4684,41 +4651,41 @@ table.ui-datepicker-calendar tbody tr:last-child td{
             height: 125px;
             box-sizing: border-box;
         }
-        .bottom-header.fixed .logo a:after{
+        header.fixed .bottom-header .logo a:after{
             display: block;
         }
-        .bottom-header.fixed .search-header-top{
+        header.fixed .bottom-header .search-header-top{
             display: block;
         }
-        .bottom-header.fixed .cart-top{
+        header.fixed .bottom-header .cart-top{
             display: block;
         }
-        .bottom-header.fixed .cart-left,
-        .bottom-header.fixed .cart-left a{
+        header.fixed .bottom-header .cart-left,
+        header.fixed .bottom-header .cart-left a{
             width: 69px;
             height: 69px;
         }
-        .bottom-header.fixed .cart-left a{
+        header.fixed .bottom-header .cart-left a{
             background-size: 100% 200%;
         }
-        .bottom-header.fixed .cart-right{
+        header.fixed .bottom-header .cart-right{
             margin: 0;
         }
-        .bottom-header.fixed .logo{
+        header.fixed .bottom-header .logo{
             padding: 0;
         }
-        .bottom-header.fixed .logo a img{
+        header.fixed .bottom-header .logo a img{
             height: inherit;
         }
-        .bottom-header.fixed .cart{
+        header.fixed .bottom-header .cart{
             margin: 0;
             padding: 0;
         }
-        .bottom-header.fixed .search-header-bottom{
+        header.fixed .bottom-header .search-header-bottom{
             margin: 0;
             padding: 0;
         }
-        .bottom-header.fixed .cart-products{
+        header.fixed .bottom-header .cart-products{
             right: inherit;
         }
         header .container{
@@ -4743,6 +4710,9 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     table tr td a.table-button:last-child{
         margin: 0;
     }
+	.geen-bg-for-menu {
+		height: 98px;
+	}
     .our-contacts .site-are-ctreated-by{
         position: absolute;
         right: 120px;
@@ -4759,10 +4729,22 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     .main-manu-on-index-left{
         width: 70%;
     }
-    .index-right{
+    .index-right {
         width: 30%;
-        padding: 35px 10px 0 10px;
+        padding-left: 15px;
     }
+	.index-right + .container.index-sliders {
+		position: static;
+	}
+	.slick-slider .owl-nav > div.owl-prev {
+		left: 4px;
+	}
+	.slick-slider .owl-nav > div.owl-next {
+		right: 4px;
+	}
+	.owl-prev {
+		left: 25px !important;
+	}
     .main-manu-on-index-right{
         width: 30%;
     }
@@ -4937,7 +4919,8 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     .title-of-catalog{
         float: left;
         font-size: 20px;
-        font-family: 'RobotoLight';
+        font-family: 'Roboto';
+		font-weight: 300;
         padding: 0 0 0 0;
         cursor: pointer;
     }
@@ -4987,7 +4970,8 @@ table.ui-datepicker-calendar tbody tr:last-child td{
         vertical-align: middle;
         font-size: 20px;
         color: #fff;
-        font-family: 'RobotoLight';
+        font-family: 'Roboto';
+		font-weight: 300;
     }
     .filter-content-button span.icon{
         width: 24px;
@@ -5114,6 +5098,9 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     .container{
         position: relative;
     }
+	.container.index-sliders {
+		position: static;
+	}
     .catalog-menu{
         width: 70%;
         z-index: 3;
@@ -5348,7 +5335,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     .stock-title span{
         padding: 4px 15px;
         font-size: 28px;
-        font-family: "RobotoLight";
+        font-family: 'Roboto';font-weight: 300;
     }
     .footer-social{
         float: left;
@@ -5401,7 +5388,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     .menu-of-orders-button span{
         font-size: 16px;
         color: #fff;
-        font-family: "RobotoBold";
+        font-family: 'Roboto';font-weight: 700;
         text-transform: uppercase;
     }
     .left-content{
@@ -5692,18 +5679,18 @@ table.ui-datepicker-calendar tbody tr:last-child td{
         width: 340px;
     }
     .bottom-header,
-    .bottom-header.fixed{
+    header.fixed .bottom-header{
         height: 260px;
     }
     .cart,
-    .bottom-header.fixed .cart{
+    header.fixed .bottom-header .cart{
         top: 130px;
         left: 50%;
         right: inherit;
         margin: 0 0 0 -102.5px;
     }
     .search-header-bottom,
-    .bottom-header.fixed .search-header-bottom{
+    header.fixed .bottom-header .search-header-bottom{
         width: 350px;
         top: inherit;
         bottom: 0;
@@ -5764,7 +5751,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     .stock-title span{
         padding: 4px 5px;
         font-size: 16px;
-        font-family: "RobotoLight";
+        font-family: 'Roboto';font-weight: 300;
     }
     .steps a{
         padding: 10px 10px;
@@ -5805,7 +5792,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     }
     .main-menu-button span{
         color: #fff;
-        font-family: "RobotoBold";
+        font-family: 'Roboto';font-weight: 700;
         font-size: 16px;
         text-transform: uppercase;
     }
@@ -6027,7 +6014,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
         }
         .delivery-process-table table tr td:before{
             content: "";
-            font-family: "RobotoMedium";
+            font-family: 'Roboto';font-weight: 500;
             font-size: 14px;
             line-height: 15px;
             color: #fff;
@@ -6095,7 +6082,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
             content: "";
             font-size: 12px;
             text-transform: uppercase;
-            font-family: "RobotoBold";
+            font-family: 'Roboto';font-weight: 700;
             color: #000;
             font-weight: 100;
             padding: 0 10px;
@@ -6167,7 +6154,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
                 width: 40%;
                 height: 100%;
                 text-align: center;
-                font-family: "RobotoMedium";
+                font-family: 'Roboto';font-weight: 500;
                 font-size: 14px;
                 line-height: 15px;
                 color: #fff;
@@ -6338,7 +6325,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
     .logo a:after{
         display: none;
     }
-    .bottom-header.fixed .logo a:after{
+    header.fixed .bottom-header .logo a:after{
         display: none;
     }
     .logo a img{
@@ -6351,7 +6338,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
         display: none;
     }
     .search-header-bottom,
-    .bottom-header.fixed .search-header-bottom{
+    header.fixed .bottom-header .search-header-bottom{
         width: 260px;
         margin: 0 0 0 -130px;
     }
@@ -6359,7 +6346,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
         width: 111px;
     }
     .bottom-header,
-    .bottom-header.fixed{
+    header.fixed .bottom-header{
         height: 150px;
     }
     .enter a.mobil-cart-button{
