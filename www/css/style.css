@@ -4527,6 +4527,7 @@ table.ui-datepicker-calendar tbody tr:last-child td{
 }
 .index-left{
     width: 75%;
+	width: calc(((1140px * 0.75) + ((100% - 1140px) / 2)) - 15px);
 }
 /* Фиксация хедера при проерутки */
     header.fixed .bottom-header{
