@@ -2785,6 +2785,7 @@ table tr td .price:after,
 }
 .product-bottom-left{
     width: 165px;
+	width: 73%;
     border-right: 1px solid #b5b5b5;
     text-align: center;
     float: left;
@@ -2860,6 +2861,7 @@ table tr td .price:after,
 }
 .product-bottom-right{
     width: 32px;
+	width: 26.5%;
     text-align: center;
     float: right;
     line-height: 43px;
