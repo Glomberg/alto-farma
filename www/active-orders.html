@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="orders-page">
     <header>
         <div class="container clearfix">
             <div class="top-header">
@@ -285,131 +285,120 @@
         </div>
         <div class="left-content">
             <div class="table-mobil active-orders">
-				<div class="active-orders-header"></div>
-				<div class="active-orders-item"></div>
-				<div class="active-orders-item"></div>
-				<div class="active-orders-item"></div>
-                <!--<table>
-                    <tr>
-                        <th></th>
-                        <th>Дата</th>
-                        <th>Номер<br> заказа</th>
-                        <th>Наименование</th>
-                        <th>Кол-во</th>
-                        <th>Стоимость</th>
-                    </tr>
-                    <tr class="gray">
-                        <td class="orange">
-                            <a href="#" class="table-arrow"></a>
-                        </td>
-                        <td>
-                           10.08.2016 
-                        </td>
-                        <td>
-                            258
-                        </td>
-                        <td>
-                            Заказ №258
-                        </td>
-                        <td>
-                            1
-                        </td>
-                        <td>
-                            5200 р
-                            <a href="cart.html" class="repeat open_window5">
-                                <span>Повторить заказ</span>
-                                <img src="images/icons/repeat.png" alt="">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr class="gray">
-                        <td class="orange white">
-                        </td>
-                        <td>
-                           10.08.2016 
-                        </td>
-                        <td>
-                            342
-                        </td>
-                        <td>
-                            Заказ №342
-                        </td>
-                        <td>
-                            2
-                        </td>
-                        <td>
-                            5200 р
-                            <a href="cart.html" class="repeat open_window5">
-                                <span>Повторить заказ</span>
-                                <img src="images/icons/repeat.png" alt="">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="orange white">
-                            <a href="#" class="table-arrow bottom"></a>
-                        </td>
-                        <td>
-                           10.08.2016 
-                        </td>
-                        <td>
-                            342
-                        </td>
-                        <td>
-                            <a href="#">Товар №1</a>
-                        </td>
-                        <td>
-                            2
-                        </td>
-                        <td>
-                            5200 р
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="orange white">
-                        </td>
-                        <td>
-                           10.08.2016 
-                        </td>
-                        <td>
-                            342
-                        </td>
-                        <td>
-                            <a href="#2">Товар №2</a>
-                        </td>
-                        <td>
-                            2
-                        </td>
-                        <td>
-                            5200 р
-                        </td>
-                    </tr>
-                    <tr class="gray">
-                        <td class="orange">
-                            <a href="#" class="table-arrow"></a>
-                        </td>
-                        <td>
-                           10.08.2016 
-                        </td>
-                        <td>
-                            258
-                        </td>
-                        <td>
-                            Заказ №258
-                        </td>
-                        <td>
-                            1
-                        </td>
-                        <td>
-                            5200 р
-                            <a href="cart.html" class="repeat open_window5">
-                                <span>Повторить заказ</span>
-                                <img src="images/icons/repeat.png" alt="">
-                            </a>
-                        </td>
-                    </tr>
-                </table>-->
-            </div>
+				<div class="table-header">
+					<div></div>
+					<div><span>Дата</span></div>
+					<div><span>Номер<br> заказа</span></div>
+					<div><span>Наименование</span></div>
+					<div><span>Кол-во</span></div>
+					<div><span>Стоимость</span></div>
+				</div>
+				<div class="table-item">
+					<div class="trigger"></div>
+					<!-- Visible field -->
+					<div class="visible-field">
+						<div></div>
+						<div><span>10.08.2016</span></div>
+						<div><span>258</span></div>
+						<div><span>Заказ №258</span></div>
+						<div><span>1</span></div>
+						<div><span>5200 р</span></div>
+						<a href="cart.html" class="repeat open_window5">
+							<span>Повторить заказ</span>
+							<img src="images/icons/repeat.png" alt="">
+						</a>
+					</div>
+					<!-- Hidden fields -->
+					<div class="hidden-fields">
+						<div class="hidden-item">
+							<div></div>
+							<div><span>10.08.2016</span></div>
+							<div><span>342</span></div>
+							<div><span><a href="#">Товар №1</a></span></div>
+							<div><span>2</span></div>
+							<div><span>5200 р</span></div>
+						</div>
+						<div class="hidden-item">
+							<div></div>
+							<div><span>10.08.2016</span></div>
+							<div><span>343</span></div>
+							<div><span><a href="#">Товар №2</a></span></div>
+							<div><span>2</span></div>
+							<div><span>5200 р</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="table-item">
+					<div class="trigger"></div>
+					<!-- Visible field -->
+					<div class="visible-field">
+						<div></div>
+						<div><span>10.08.2016</span></div>
+						<div><span>258</span></div>
+						<div><span>Заказ №258</span></div>
+						<div><span>1</span></div>
+						<div><span>5200 р</span></div>
+						<a href="cart.html" class="repeat open_window5">
+							<span>Повторить заказ</span>
+							<img src="images/icons/repeat.png" alt="">
+						</a>
+					</div>
+					<!-- Hidden fields -->
+					<div class="hidden-fields">
+						<div class="hidden-item">
+							<div></div>
+							<div><span>10.08.2016</span></div>
+							<div><span>342</span></div>
+							<div><span><a href="#">Товар №1</a></span></div>
+							<div><span>2</span></div>
+							<div><span>5200 р</span></div>
+						</div>
+						<div class="hidden-item">
+							<div></div>
+							<div><span>10.08.2016</span></div>
+							<div><span>343</span></div>
+							<div><span><a href="#">Товар №2</a></span></div>
+							<div><span>2</span></div>
+							<div><span>5200 р</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="table-item">
+					<div class="trigger"></div>
+					<!-- Visible field -->
+					<div class="visible-field">
+						<div></div>
+						<div><span>10.08.2016</span></div>
+						<div><span>258</span></div>
+						<div><span>Заказ №258</span></div>
+						<div><span>1</span></div>
+						<div><span>5200 р</span></div>
+						<a href="cart.html" class="repeat open_window5">
+							<span>Повторить заказ</span>
+							<img src="images/icons/repeat.png" alt="">
+						</a>
+					</div>
+					<!-- Hidden fields -->
+					<div class="hidden-fields">
+						<div class="hidden-item">
+							<div></div>
+							<div><span>10.08.2016</span></div>
+							<div><span>342</span></div>
+							<div><span><a href="#">Товар №1</a></span></div>
+							<div><span>2</span></div>
+							<div><span>5200 р</span></div>
+						</div>
+						<div class="hidden-item">
+							<div></div>
+							<div><span>10.08.2016</span></div>
+							<div><span>343</span></div>
+							<div><span><a href="#">Товар №2</a></span></div>
+							<div><span>2</span></div>
+							<div><span>5200 р</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
         <div class="right-bar">
             <div class="menu-of-orders-button">
