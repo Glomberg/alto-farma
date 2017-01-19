@@ -18,7 +18,7 @@ $(document).ready(function(){
     $("input.checkboxradio").checkboxradio();
     $(".selectmenu").selectmenu();
 	
-	// Clone inputs ib modal form of "personal-room" page
+	// Clone inputs in modal form of "personal-room" page
 	$('a.update-data').on('click', function(e){
 		e.preventDefault();
 		var wrapper = $(this).parent('.input-with-button');

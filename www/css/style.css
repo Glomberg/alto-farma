@@ -1427,6 +1427,9 @@ a.downald{
     position: relative;
     margin: 0 0 10px 0;
 }
+.edit-animal .animal-img {
+	min-height: 231px;
+}
 .animal-img .downald{
     top: 50%;
     left: 50%;
@@ -1977,11 +1980,160 @@ ol{
     background: #f42020;
     padding: 18.5px 0;
 }
+
+/* Old table styles */
+table{
+    border-spacing: 0;
+    width: 100%;
+}
+table tr{
+}
+table tr th{
+    font-family: 'Roboto';font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #fff;
+    background: #90c846;
+    padding: 10.5px 0;
+}
+table tr td{
+    font-family: 'Roboto';
+	font-weight: 500;
+    font-size: 13px;
+    color: #161616;
+    border-top: 1px solid #c6c6c6;
+}
+table tr td:first-child{
+    border-left: 1px solid #c6c6c6;
+}
+table tr td:last-child{
+    border-right: 1px solid #c6c6c6;
+}
+table tr:last-child td{
+    border-bottom: 1px solid #c6c6c6;
+}
+table tr.gray td{
+    background: #ebebeb;
+}
+table tr td{
+    background: #f6f6f6;
+    padding: 17.5px 15px;
+    position: relative;
+}
+.table-arrow{
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 11px;
+    background: url(../images/icons/active-orders.png) no-repeat;
+}
+.table-arrow.bottom{
+    background-position: 0 100%;
+}
+table tr td.orange{
+    background: #f1592a;
+    border: 0;
+}
+table tr td.orange.white{
+    background: #fb9576;
+}
+.active-orders table{
+    text-align: center;
+    width: 625px;
+}
+.waiting-list table{
+    text-align: center;
+}
+.waiting-list table tr td{
+    font-size: 14px;
+    line-height: 16px;
+    background: #fff;
+}
+.table-button{
+    display: block;
+    font-family: 'Roboto';
+	font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: right;
+    color: #000;
+    margin: 0  25px 10px 0;
+}
+table tr td .table-button:visited{
+    color: #000;
+}
+.table-button:last-child{
+    margin: 0 25px 0 0;
+}
+.table-button span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.table-button img{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 10px;
+}
+table tr td .table-button:hover{
+    color: #f1592a;
+    text-decoration: none;
+}
+table tr td.no-in-stock .table-button{
+    color: #b4b4b4;
+}
+table tr td.no-in-stock .table-button:hover:after{
+    background-position: 0 0;
+}
+.cart-product-right-bottom{
+    text-align: center;
+}
+table tr td .price,
+.cart-product-right-bottom .price{
+    font-size: 18px;
+    line-height: 25px;
+    color: #f1592a;
+    padding: 5.5px 0;
+}
+.cart-product-right-bottom .price{
+    font-family: 'Roboto';
+	font-weight: 700;
+}
+table tr td .price:after,
+.product-price span:after,
+.cart-product-right-bottom .price:after,
+.price:after{
+    content: "";
+    width: 10px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/icons/rub.png) no-repeat;
+    margin: -2px 0 0 3px;
+}
+.price.white:after{
+    background: url(../images/icons/white-rub.png) no-repeat;
+}
+.active-orders2 table{
+    width: 100%;
+}
+.cancel-order{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/cancel-order.png) no-repeat;
+}
+.cancel-order:hover{
+    background-position: 0 100%;
+}
+/* /Old table styles */
+
 .table-mobil{
     font-family: 'Roboto';
 	font-weight: 500;
 	color: #161616;
 	font-size: 14px;
+	position: relative;
 }
 	.table-mobil span a {
 		font-weight: 700;
@@ -6294,6 +6446,62 @@ table.ui-datepicker-calendar tbody tr:last-child td{
                 width: auto;
             }
     /* Таблица */
+	
+	.table-header {
+		display: none;
+	}
+	.table-mobil > div {
+		margin-bottom: 10px;
+	}
+	.table-mobil .visible-field > div, .table-mobil .hidden-item > div {
+		float: none;
+		width: 100% !important;
+		padding-left: 50%;
+	}
+	.repeat {
+		width: 50%;
+	}
+	.table-mobil .visible-field > div:before, .hidden-item > div:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		background: #90C846;
+		color: #FFFFFF;
+		font-family: 'Roboto';
+		font-weight: 500;
+		padding-top: 17px;
+		padding-left: 6.5%;
+		box-sizing: border-box;
+		font-family: 'Roboto';
+		font-weight: 500;
+		font-size: 16px;
+	}
+	.table-mobil .visible-field > div:nth-child(2):before, .hidden-item > div:nth-child(2):before {
+		content: 'Дата';
+	}
+	.table-mobil .visible-field > div:nth-child(3):before, .hidden-item > div:nth-child(3):before {
+		content: 'Номер заказа';
+	}
+	.table-mobil .visible-field > div:nth-child(4):before, .hidden-item > div:nth-child(4):before {
+		content: 'Наименование';
+	}
+	.table-mobil .visible-field > div:nth-child(5):before, .hidden-item > div:nth-child(5):before {
+		content: 'Кол-во';
+	}
+	.table-mobil .visible-field > div:nth-child(6):before, .hidden-item > div:nth-child(6):before {
+		content: 'Стоимость';
+	}
+	.table-mobil .visible-field > div:nth-child(7):before, .hidden-item > div:nth-child(7):before {
+		content: 'Статус';
+	}
+	.table-mobil .visible-field > div:nth-child(8):before, .hidden-item > div:nth-child(8):before {
+		content: 'Отменить заказ';
+	}
+	.table-mobil .table-item .trigger {
+		border-bottom: none;
+	}
 }
 @media screen and (max-width: 479px){
     .characteristics-green-left{
